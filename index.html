@@ -28,7 +28,7 @@
        .bg-main-purple { background-color: #501fb2; }
        .text-title { color: #501fb2; }
        .text-body { color: #0d2b54; }
-
+       .border-main-purple { border-color: #501fb2; }
 
        /* Clean Circle Style */
        .flat-circle {
@@ -66,12 +66,20 @@
 </head>
 <body class="min-h-screen relative overflow-x-hidden">
 
-
-   <!-- More Info Link -->
-   <a href="https://beascout.scouting.org/list/?zip=94501&program%5B%5D=pack&unitID=375388&unitID=375388" target="_blank" rel="noopener noreferrer" class="fixed top-4 right-4 z-50 bg-main-purple text-white fun-font py-2 px-5 rounded-full shadow-lg hover:bg-violet-700 transition-colors text-lg">
-       More Info
-   </a>
-
+   <!-- Action Buttons Container -->
+   <div class="fixed top-4 right-4 z-50 flex flex-col items-end gap-3">
+       <!-- More Info Link -->
+       <a href="https://beascout.scouting.org/list/?zip=94501&program%5B%5D=pack&unitID=375388&unitID=375388" target="_blank" rel="noopener noreferrer" class="bg-main-purple text-white fun-font py-2 px-5 rounded-full shadow-lg hover:bg-violet-700 transition-colors text-lg">
+           More Info
+       </a>
+       <!-- Calendar Link -->
+       <a href="https://teamup.com/ksppw2isqkkoimm4px" target="_blank" rel="noopener noreferrer" class="bg-white text-title fun-font py-2 px-5 rounded-full shadow-lg hover:bg-gray-100 transition-colors text-lg flex items-center border-2 border-main-purple">
+           <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" viewBox="0 0 20 20" fill="currentColor">
+               <path fill-rule="evenodd" d="M5.75 2a.75.75 0 01.75.75V4h7V2.75a.75.75 0 011.5 0V4h.25A2.75 2.75 0 0118 6.75v8.5A2.75 2.75 0 0115.25 18H4.75A2.75 2.75 0 012 15.25v-8.5A2.75 2.75 0 014.75 4H5V2.75A.75.75 0 015.75 2z M4 7.5h12v1.5H4z M4 11.5h12v1.5H4z" clip-rule="evenodd" />
+           </svg>
+           Calendar
+       </a>
+   </div>
 
    <!-- Girls, Boys, Everyone Pop-out Circle -->
    <div class="fixed top-0 left-0 w-64 h-64 sm:w-80 sm:h-80 -translate-x-1/4 -translate-y-1/4 z-50">
@@ -88,9 +96,7 @@
    </div>
 
 
-   <div class="container mx-auto text-center pt-48 sm:pt-32 p-4 sm:p-8">
-
-
+   <div class="container mx-auto text-center pt-48 sm:pt-56 lg:pt-32 p-4 sm:p-8">
        <!-- Header Section -->
        <h1 class="title-font text-7xl sm:text-9xl text-title mb-2 drop-shadow-lg">PACK 73</h1>
        <p class="text-xl sm:text-2xl text-body handwritten mb-12">Central Alameda Cub Scout Pack</p>
@@ -111,7 +117,7 @@
                <div class="flex flex-wrap justify-center gap-8">
                    <div class="w-48 h-48 rounded-full flex flex-col items-center justify-center text-center p-4 shadow-lg flat-circle">
                        <h3 class="text-lg fun-font">Pack Meetings</h3>
-                       <p class="text-sm">at<br>Love Elementary</p>
+                       <p class="text-sm">First Tuesday<br>at Love Elementary</p>
                    </div>
                    <div class="w-48 h-48 rounded-full flex flex-col items-center justify-center text-center p-4 shadow-lg flat-circle">
                        <h3 class="text-lg fun-font">Den Meetings</h3>
@@ -167,7 +173,14 @@
            <!-- Camping & Overnights -->
            <div class="bg-white/40 backdrop-blur-sm p-6 rounded-2xl shadow-lg text-body">
                <div class="flex justify-center mb-4">
-                   <svg class="w-16 h-16 text-title" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12a7.5 7.5 0 0015 0m-15 0a7.5 7.5 0 1115 0m-15 0H3m16.5 0H21m-1.5 0H12m-8.457 3.077l1.414-1.414a1.5 1.5 0 012.121 0l1.414 1.414m-5.656 0l1.414 1.414a1.5 1.5 0 002.121 0l1.414-1.414m-2.828 0l-7.071 7.071A1.5 1.5 0 003.45 21H20.5a1.5 1.5 0 001.05-.44l-7.07-7.071m-2.828 0A3.375 3.375 0 0012 9.75V9" /></svg>
+                   <svg class="w-16 h-16 text-title" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" xmlns="http://www.w3.org/2000/svg">
+                       <g transform="translate(2.4, 1.2) scale(0.8)">
+                           <path stroke-linecap="round" stroke-linejoin="round" d="M15.362 5.214A8.252 8.252 0 0 1 12 21 8.25 8.25 0 0 1 6.038 7.047 8.287 8.287 0 0 0 9 9.601a8.983 8.983 0 0 1 3.361-6.867 8.21 8.21 0 0 0 3 2.48Z" />
+                           <path stroke-linecap="round" stroke-linejoin="round" d="M12 18a3.75 3.75 0 0 0 .495-7.468 5.99 5.99 0 0 0-1.925 3.547 5.975 5.975 0 0 1-2.133-1.001A3.75 3.75 0 0 0 12 18Z" />
+                       </g>
+                       <line x1="5" y1="21" x2="19" y2="21" stroke-linecap="round"/>
+                       <line x1="7" y1="18" x2="17" y2="18" stroke-linecap="round"/>
+                   </svg>
                </div>
                <h3 class="text-2xl fun-font mb-2">Camping & Overnights</h3>
                <p>Get ready for amazing sleepovers! This year we're planning a special campout at the Santa Cruz Beach Boardwalk in the fall and another great overnight camping adventure in the spring. Get your sleeping bags ready!</p>
@@ -177,7 +190,7 @@
            <!-- Signature Events -->
            <div class="bg-white/40 backdrop-blur-sm p-6 rounded-2xl shadow-lg text-body">
                <div class="flex justify-center mb-4">
-                   <svg class="w-16 h-16 text-title" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M16.5 18.75h-9a9 9 0 119 0zM16.5 18.75a9 9 0 00-9 0m9 0a9 9 0 01-9 0m9 0h-9m9 0H12m6.375-9.125a9.001 9.001 0 00-12.75 0" /></svg>
+                   <svg class="w-16 h-16 text-title" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.898 20.562L16.5 21.75l-.398-1.188a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.188-.398a2.25 2.25 0 001.423-1.423L16.5 15.75l.398 1.188a2.25 2.25 0 001.423 1.423L19.5 18.75l-1.188.398a2.25 2.25 0 00-1.423 1.423z" /></svg>
                </div>
                <h3 class="text-2xl fun-font mb-2">Signature Events</h3>
                <p>Our year is packed with can't-miss events! We'll help our community with Scouting for Food, race in the Pinewood Derby, and celebrate our Arrow of Light scouts as they bridge over at the Blue & Gold banquet.</p>
@@ -187,7 +200,9 @@
            <!-- Outdoor Fun -->
            <div class="bg-white/40 backdrop-blur-sm p-6 rounded-2xl shadow-lg text-body">
                <div class="flex justify-center mb-4">
-                   <svg class="w-16 h-16 text-title" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M6.115 5.19l.319 1.913A6 6 0 0012 12h0a6 6 0 005.566-4.897l.319-1.913A2.25 2.25 0 0119.5 3h-15a2.25 2.25 0 012.115 2.19zM12 12v3m0 0v3m0-3h3m-3 0h-3" /></svg>
+                   <svg class="w-16 h-16 text-title" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M12 21L12 3M8 6L12 3L16 6M7 11L12 8L17 11M6 16L12 13L18 16" />
+                   </svg>
                </div>
                <h3 class="text-2xl fun-font mb-2">Outdoor Fun</h3>
                <p>Let's get outside! We'll kick off the year with an outdoor activity, go on a pack hike in the fall, enjoy a bike ride in the spring, and help keep our shores beautiful with a beach cleanup day.</p>
@@ -244,14 +259,14 @@
 
    <!--
    ================================================================================
-   CONTEXT DUMP FOR FUTURE EDITS
+   CONTEXT DUMP FOR FUTURE EDITS - Last Updated: 2025-07-12
    ================================================================================
 
    This comment serves as a detailed log of the entire generation session for the Pack 73 landing page. Its purpose is to provide complete context for any future AI or human developer making edits.
 
 
    **Project Goal:**
-   The initial request was to convert a one-page PDF flyer ("Master copy.pdf") for the new Cub Scout Pack 73 in Alameda, CA, into a visually engaging, infographic-style HTML landing page. The core requirements were to maintain the friendly, welcoming style of the original flyer while creating a modern, responsive web presence.
+   The initial request was to convert a one-page PDF flyer for the new Cub Scout Pack 73 in Alameda, CA, into a visually engaging, infographic-style HTML landing page. The core requirements were to maintain the friendly, welcoming style of the original flyer while creating a modern, responsive web presence.
 
 
    **Design & Content Evolution (Iterative Process):**
@@ -267,51 +282,50 @@
        * `Bangers` & `Fredoka One`: "Fun" fonts added later to increase the playful, kid-friendly vibe, used for major headings and subheadings respectively.
 
 
-   3.  **Layout Evolution - The Circles:** A major design shift occurred when the user requested abandoning rectangular layouts in favor of circles. This became a core design motif. The layout of these circles went through several iterations:
-       * **Initial Grid:** A simple flexbox grid of all six circles.
-       * **Triangles:** An attempt was made to arrange the circles into two triangular formations with SVG lines connecting them. This was deemed "bad" and quickly undone.
-       * **Vertical Split (Attempt 1):** The layout was changed to a vertical split with a divider line down the middle and three circles on each side. This created too much vertical scroll ("below the fold" issue).
-       * **Horizontal Split:** The layout was changed to two horizontal rows separated by a divider. This was also not quite right.
-       * **Final Vertical Split (Current Layout):** The final, successful layout is a hybrid. It uses a vertical divider but arranges the circles on each side into a 1-2 formation (one circle on top, two below) to conserve vertical space and keep the main info visible on most screens.
 
 
-   4.  **Color Palette Journey:**
-       * **Initial Scout Colors:** Early versions used traditional scout-like colors (tan, blue, red).
-       * **User-Directed Shift:** The user requested a complete palette change to purple and salmon, inspired by the original PDF but with a more vibrant web interpretation.
-       * **Final Palette:** The user provided a specific, more refined color palette which is currently in use:
-           * Background Gradient: `#d7bcfd` to `#ffc897`
-           * Title Text: `#501fb2`
-           * Body Text: `#0d2b54`
-           * Pop-out Circle: A brighter purple (`#8b5cf6`) was chosen to make it stand out.
+   3.  **Layout Evolution - The Circles:** A major design shift occurred when the user requested abandoning rectangular layouts in favor of circles. This became a core design motif. The layout of these circles went through several iterations, culminating in the current vertical split layout which arranges circles in a 1-2 formation on each side of a divider to conserve vertical space.
 
 
-   5.  **The "Girls, Boys, Everyone!" Pop-Out Circle:** This element was a key focus.
-       * **Prominence:** It was designed to be the first thing the eye reads.
-       * **Styling:** It was made larger than the other circles, given a fixed position to float on scroll, and styled with a strong glow/shadow and text shadow to make it "pop".
-       * **Positioning:** Its final position was meticulously adjusted over several iterations to be visually centered in the visible portion of the off-screen circle.
-       * **Animation:** A "pulse" animation was tried and rejected. The final "marching ants" effect was implemented using a CSS keyframe animation on a `::before` pseudo-element, with the speed adjusted to be a very slow "crawl" (240 seconds per rotation). The `outline` and `outline-offset` properties were used on other circles, but for the animated one, a pseudo-element was required to rotate the border independently of the content.
+   4.  **Color Palette Journey:** The palette evolved from traditional scout colors to the current vibrant purple and salmon gradient, based on user direction for a more modern feel.
+       * Background Gradient: `#d7bcfd` to `#ffc897`
+       * Title Text: `#501fb2`
+       * Body Text: `#0d2b54`
+       * Pop-out Circle: `#8b5cf6`
+
+
+   5.  **The "Girls, Boys, Everyone!" Pop-Out Circle:** This element was a key focus. It is larger, fixed-position, and styled with a glow and a slow "marching ants" border animation to make it a prominent, welcoming statement.
 
 
    6.  **Content Sections & Additions:**
-       * **Meeting Info Clarity:** The initial "Location" circle was split into "Pack Meetings" and "Den Meetings" to clarify the different locations for each, a key request from the user.
-       * **Activities Infographic:** This section was built from a detailed calendar provided by the user. The raw text was synthesized into six thematic categories, each with a relevant, styled SVG icon and descriptive text. The "Blue & Gold" section was later swapped for "Character & Leadership" based on user feedback and ideas from a supplemental flyer.
-       * **Parent Volunteer Section:** This was a significant addition. A Google Search was performed to find effective language for recruiting volunteers. The final text emphasizes that the pack is volunteer-run and that every contribution matters. It was styled with a full-width, high-contrast purple background to make it a distinct and impactful call to action.
-       * **Non-Discrimination Clause:** This was added with the explicit instruction "do not edit it at all." Its placement was moved from the bottom of the page to directly below the main info circles for greater prominence.
-       * **"More Info" Link:** A fixed link was added to the top-right corner, linking to the official BeAScout.org page for the pack, styled to match the page's aesthetic.
+       * **Meeting Info Clarity:** The "Location" circle was split into "Pack Meetings" and "Den Meetings" for clarity. The text was updated to specify that Pack Meetings are on the "First Tuesday" while keeping the general "Meetings" circle set to "Tuesdays".
+       * **Activities Infographic:** A detailed calendar was synthesized into six thematic categories with icons and descriptions. The icon for "Camping & Overnights" was updated to a stylized campfire. The "Outdoor Fun" icon was replaced with a stylized, single pine tree.
+       * **Parent Volunteer Section:** Added to emphasize the pack is volunteer-run and encourage participation.
+       * **Non-Discrimination Clause:** Added with explicit instructions not to edit the wording. Moved to a prominent position.
+       * **Action Buttons:** A container was added to the top-right for key links.
+           * **"More Info" Link:** Links to the official BeAScout.org page.
+           * **"Calendar" Link:** Added to link to the pack's Teamup calendar. The original SVG icon had a rendering issue and was replaced with a cleaner, more standard version with thicker internal lines.
 
 
    **Current State & Future Context:**
-   * **Technology:** The page is a single, self-contained HTML file. It uses Tailwind CSS via a CDN for styling, with custom styles and animations defined in an inline `<style>` block.
-   * **Responsiveness:** The layout uses flexbox and responsive prefixes (e.g., `lg:flex-row`) to adapt from a single-column mobile layout to a two-column desktop layout. A specific padding adjustment (`pt-48 sm:pt-32`) was made to the main container to prevent the header from overlapping the floating circle on small screens.
+   * **Technology:** Single, self-contained HTML file using Tailwind CSS via CDN and inline custom styles.
+   * **Responsiveness (CRITICAL NOTE FOR FUTURE EDITS):**
+       * **The Overlap Challenge:** The fixed-position "Girls, Boys, Everyone!" circle in the top-left corner creates a significant layout challenge. On smaller viewports, it can easily overlap the main "PACK 73" heading.
+       * **The Solution:** This was solved by applying responsive top padding to the main content container: `<div class="container ... pt-48 sm:pt-56 lg:pt-32 ...">`.
+           * `pt-48`: The default padding for very small (mobile) screens.
+           * `sm:pt-56`: At the `sm` breakpoint (640px), the padding is *increased* to push the content down further, as this is the range where the overlap is most severe.
+           * `lg:pt-32`: At the `lg` breakpoint (1024px), the layout shifts to two columns. The heading is no longer in danger of overlapping, so the padding is reduced to bring the content higher on the page.
+       * **Warning:** Any changes to the header, title font size, or the pop-out circle's size/position will likely require re-calibrating these padding values. Test thoroughly across a wide range of browser widths, especially between 640px and 1024px.
+
+
    * **Key Mandates to Preserve:**
        * The specific wording of the non-discrimination clause.
-       * The floating, animated "Girls, Boys, Everyone!" circle is a central design feature.
+       * The floating, animated "Girls, Boys, Everyone!" circle as a central design feature.
        * The overall color palette and font combination.
-       * The clear distinction between Pack and Den meeting locations.
+       * The responsive padding solution (`pt-48 sm:pt-56 lg:pt-32`) is critical for layout integrity.
 
    This context should be sufficient to understand the history and intent behind every element on the page, facilitating any future updates or modifications.
    -->
-
 
 </body>
 </html>
