@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pack 73 Alameda - 2025 Popcorn Sale</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Bangers, Fredoka One, Kalam, Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Fredoka+One&family=Kalam:wght@400;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Define the new color palette as CSS variables */
+        :root {
+            --bg-start: #d7bcfd;
+            --bg-end: #ffc897;
+            --title-text: #501fb2;
+            --body-text: #0d2b54;
+            --pop-circle: #8b5cf6;
+            --pop-circle-dark: #7c3aed; /* For hover states */
+        }
+
+        /* Apply the new background gradient and default text color */
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: linear-gradient(135deg, var(--bg-start), var(--bg-end));
+            color: var(--body-text);
+        }
+
+        /* Custom font utility classes */
+        .font-bangers {
+            font-family: 'Bangers', cursive;
+            letter-spacing: 2px;
+        }
+        .font-fredoka {
+            font-family: 'Fredoka One', cursive;
+        }
+        .font-kalam {
+            font-family: 'Kalam', cursive;
+        }
+
+        /* Custom color classes */
+        .text-title { color: var(--title-text); }
+        .text-body { color: var(--body-text); }
+        .text-pop { color: var(--pop-circle); }
+        .bg-pop { background-color: var(--pop-circle); }
+        .bg-pop-hover:hover { background-color: var(--pop-circle-dark); }
+        .border-pop { border-color: var(--pop-circle); }
+
+        /* Glassmorphism effect for header/footer */
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.5);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+
+        .progress-bar-container {
+            height: 30px;
+            background-color: rgba(255, 255, 255, 0.5);
+            border-radius: 15px;
+            overflow: hidden;
+            border: 3px solid var(--body-text);
+        }
+        .progress-bar {
+            height: 100%;
+            background: linear-gradient(90deg, var(--pop-circle), var(--bg-start));
+            border-radius: 15px 0 0 15px;
+            transition: width 1.5s ease-in-out;
+            box-shadow: 0 0 10px rgba(139, 92, 246, 0.5);
+        }
+        .card-hover-effect {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-hover-effect:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .icon-shadow {
+             filter: drop-shadow(0 4px 3px rgba(0,0,0,0.2));
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Header -->
+    <header class="glass-effect text-center py-8 px-4 border-b-8" style="border-color: var(--bg-end);">
+        <h1 class="font-bangers text-5xl md:text-7xl text-title">Fueling Adventure, One Kernel at a Time!</h1>
+        <p class="font-kalam text-2xl md:text-3xl mt-4 text-title">Pack 73 Alameda • 2025 Popcorn Sale</p>
+    </header>
+
+    <main class="container mx-auto px-4 py-8 md:py-12">
+
+        <!-- Our Goal Section -->
+        <section id="goal" class="mb-16">
+            <div class="glass-effect rounded-2xl shadow-xl p-6 md:p-10 text-center">
+                <h2 class="font-bangers text-4xl md:text-5xl text-title mb-6">What's Poppin'? Our 2025 Goal!</h2>
+                <p class="text-body max-w-3xl mx-auto mb-8 text-lg">
+                    Our Scouts are working hard to raise funds for an amazing year of activities. Every purchase helps them learn valuable skills and makes unforgettable memories. Here's our goal and what you're supporting!
+                </p>
+                <div class="max-w-4xl mx-auto">
+                    <div class="flex justify-between items-center font-bold text-body mb-2">
+                        <span>$0</span>
+                        <span class="text-pop text-lg">$15,000 GOAL</span>
+                    </div>
+                    <div class="progress-bar-container shadow-inner">
+                        <div class="progress-bar" style="width: 0%;" id="progressBar"></div>
+                    </div>
+                    <div class="text-center mt-2 font-semibold text-body">
+                        <span id="progressText">We're at 0% ($0) of our goal!</span>
+                    </div>
+                </div>
+
+                <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Goal Item 1 -->
+                    <div class="flex flex-col items-center">
+                        <div class="p-4 rounded-full mb-3 icon-shadow" style="background-color: #e9d5ff;">
+                            <svg class="w-12 h-12 text-pop" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path></svg>
+                        </div>
+                        <h3 class="font-fredoka text-xl text-body">Summer Camp</h3>
+                        <p class="text-body opacity-80 text-sm mt-1">Send Scouts to an unforgettable week of outdoor adventure.</p>
+                    </div>
+                    <!-- Goal Item 2 -->
+                    <div class="flex flex-col items-center">
+                        <div class="p-4 rounded-full mb-3 icon-shadow" style="background-color: #fed7aa;">
+                            <svg class="w-12 h-12 text-pop" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                        </div>
+                        <h3 class="font-fredoka text-xl text-body">Pinewood Derby</h3>
+                        <p class="text-body opacity-80 text-sm mt-1">Fund the iconic race, including cars, track, and awards.</p>
+                    </div>
+                    <!-- Goal Item 3 -->
+                    <div class="flex flex-col items-center">
+                        <div class="p-4 rounded-full mb-3 icon-shadow" style="background-color: #e9d5ff;">
+                            <svg class="w-12 h-12 text-pop" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        </div>
+                        <h3 class="font-fredoka text-xl text-body">Awards & Patches</h3>
+                        <p class="text-body opacity-80 text-sm mt-1">Recognize the achievements and hard work of our Scouts.</p>
+                    </div>
+                     <!-- Goal Item 4 -->
+                    <div class="flex flex-col items-center">
+                        <div class="p-4 rounded-full mb-3 icon-shadow" style="background-color: #fed7aa;">
+                             <svg class="w-12 h-12 text-pop" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path></svg>
+                        </div>
+                        <h3 class="font-fredoka text-xl text-body">Pack Activities</h3>
+                        <p class="text-body opacity-80 text-sm mt-1">Fund exciting events, field trips, and supplies for the year.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- The Popcorn Section -->
+        <section id="popcorn">
+            <h2 class="font-bangers text-4xl md:text-5xl text-title text-center mb-10">Meet Our Delicious Lineup!</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
+
+                <!-- Popcorn Item 1: Salted Caramel Corn -->
+                <div class="bg-white/80 rounded-2xl shadow-lg overflow-hidden card-hover-effect flex flex-col">
+                    <img src="https://placehold.co/600x400/ffc897/501fb2?text=Salted+Caramel" alt="Salted Caramel Corn" class="w-full h-56 object-cover">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="font-fredoka text-2xl text-body">Salted Caramel Corn</h3>
+                        <p class="text-body opacity-80 mt-2 flex-grow">A delicious blend of sweet and salty, this caramel corn is a perfect treat.</p>
+                        <p class="font-kalam font-bold text-4xl text-pop mt-4">$20</p>
+                    </div>
+                </div>
+
+                <!-- Popcorn Item 2: White Cheddar Popcorn -->
+                <div class="bg-white/80 rounded-2xl shadow-lg overflow-hidden card-hover-effect flex flex-col">
+                    <img src="https://placehold.co/600x400/d7bcfd/501fb2?text=White+Cheddar" alt="White Cheddar Popcorn" class="w-full h-56 object-cover">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="font-fredoka text-2xl text-body">White Cheddar Popcorn</h3>
+                        <p class="text-body opacity-80 mt-2 flex-grow">Savory, cheesy goodness. Perfectly light and crispy with a sharp cheddar kick.</p>
+                        <p class="font-kalam font-bold text-4xl text-pop mt-4">$20</p>
+                    </div>
+                </div>
+
+                <!-- Popcorn Item 3: Sweet & Salty Kettle Corn -->
+                <div class="bg-white/80 rounded-2xl shadow-lg overflow-hidden card-hover-effect flex flex-col">
+                    <img src="https://placehold.co/600x400/ffc897/501fb2?text=Sweet+%26+Salty" alt="Sweet & Salty Kettle Corn" class="w-full h-56 object-cover">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="font-fredoka text-2xl text-body">Sweet & Salty Kettle Corn</h3>
+                        <p class="text-body opacity-80 mt-2 flex-grow">The perfect balance of sweet and salty. An addictive, light-and-crispy snack.</p>
+                        <p class="font-kalam font-bold text-4xl text-pop mt-4">$20</p>
+                    </div>
+                </div>
+
+                <!-- Popcorn Item 4: Popping Corn -->
+                <div class="bg-white/80 rounded-2xl shadow-lg overflow-hidden card-hover-effect flex flex-col">
+                    <img src="https://placehold.co/600x400/d7bcfd/501fb2?text=Popping+Corn" alt="Popping Corn" class="w-full h-56 object-cover">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="font-fredoka text-2xl text-body">Popping Corn</h3>
+                        <p class="text-body opacity-80 mt-2 flex-grow">Premium kernels so you can pop your own fresh, delicious popcorn at home.</p>
+                        <p class="font-kalam font-bold text-4xl text-pop mt-4">$20</p>
+                    </div>
+                </div>
+
+                <!-- Popcorn Item 5: Microwave Butter Popcorn -->
+                <div class="bg-white/80 rounded-2xl shadow-lg overflow-hidden card-hover-effect flex flex-col">
+                    <img src="https://placehold.co/600x400/ffc897/501fb2?text=Microwave+Butter" alt="Microwave Butter Popcorn" class="w-full h-56 object-cover">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="font-fredoka text-2xl text-body">Microwave Butter Popcorn</h3>
+                        <p class="text-body opacity-80 mt-2 flex-grow">A box of 12 classic microwave butter popcorn bags. Perfect for movie night!</p>
+                        <p class="font-kalam font-bold text-4xl text-pop mt-4">$25</p>
+                    </div>
+                </div>
+
+                <!-- Donation Item -->
+                <div class="bg-white/80 rounded-2xl shadow-lg overflow-hidden card-hover-effect flex flex-col border-4 border-pop">
+                    <img src="https://placehold.co/600x400/0d2b54/ffffff?text=Support+Our+Heroes" alt="Military Donation" class="w-full h-56 object-cover">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="font-fredoka text-2xl text-body">Support Our Heroes</h3>
+                        <p class="text-body opacity-80 mt-2 flex-grow">Donate to send heartwarming snacks to our troops, their families, and first responders.</p>
+                        <p class="font-kalam font-bold text-4xl text-pop mt-4">$30</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- How to Buy Section -->
+        <section id="buy" class="mt-16 glass-effect rounded-2xl shadow-xl p-6 md:p-10">
+            <h2 class="font-bangers text-4xl md:text-5xl text-center mb-8 text-title">How To Get Your Popcorn</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <!-- Step 1 -->
+                <div>
+                    <div class="bg-pop text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 font-bangers text-4xl">1</div>
+                    <h3 class="font-fredoka text-2xl mb-2 text-body">Find a Scout!</h3>
+                    <p class="text-body opacity-80">Our Scouts will be selling door-to-door and at local storefronts in Alameda. Keep an eye out for them in their uniforms!</p>
+                </div>
+                <!-- Step 2 -->
+                <div>
+                    <div class="bg-pop text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 font-bangers text-4xl">2</div>
+                    <h3 class="font-fredoka text-2xl mb-2 text-body">Order Online</h3>
+                    <p class="text-body opacity-80">Support a specific Scout by ordering through their personal online sales page. Popcorn ships directly to you!</p>
+                </div>
+                <!-- Step 3 -->
+                <div>
+                    <div class="bg-pop text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 font-bangers text-4xl">3</div>
+                    <h3 class="font-fredoka text-2xl mb-2 text-body">Visit a Storefront</h3>
+                    <p class="text-body opacity-80">Storefronts at local stores will be scheduled soon. Please check back for dates and locations!</p>
+                </div>
+            </div>
+            <div class="text-center mt-10">
+                <a href="https://pack73alameda.org" class="bg-pop bg-pop-hover text-white font-bold py-3 px-8 rounded-full transition-all transform hover:scale-105 inline-block text-lg shadow-lg">
+                    Visit Our Pack Website
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="glass-effect text-center py-6 mt-12 border-t-8" style="border-color: var(--bg-start);">
+        <p class="font-semibold text-body">Thank you for supporting Pack 73 Alameda!</p>
+        <p class="text-sm text-body opacity-70 mt-1">Scouting America | Alameda, California</p>
+    </footer>
+
+    <script>
+        // A little animation for the progress bar on load
+        window.addEventListener('load', () => {
+            const progressBar = document.getElementById('progressBar');
+            const progressText = document.getElementById('progressText');
+
+            // This would be updated dynamically with real sales data
+            const currentAmount = 0;
+            const goalAmount = 15000;
+            // Handle division by zero case for the goal amount
+            const percentage = goalAmount > 0 ? Math.round((currentAmount / goalAmount) * 100) : 0;
+
+            setTimeout(() => {
+                progressBar.style.width = percentage + '%';
+                progressText.textContent = `We're at ${percentage}% ($${currentAmount.toLocaleString()}) of our goal!`;
+            }, 500);
+        });
+    </script>
+
+</body>
+</html>
